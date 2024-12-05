@@ -3,8 +3,8 @@
 #include <ThingSpeak.h>
 
 // Replace with your network credentials
-const char* ssid = "Whats";
-const char* password = "012345678";
+const char* ssid = "";
+const char* password = "";
 
 // ThingSpeak API details
 unsigned long myChannelNumber = 2476652;
