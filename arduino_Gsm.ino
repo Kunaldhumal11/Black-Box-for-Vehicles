@@ -34,13 +34,13 @@ void SendMessage() {
   Serial.println("Sending message...");
   Sim.println("AT+CMGF=1");                    // Sets the Sim Module in send SMS mode
   delay(1000);                                 // Delay of 1 second
-  Sim.println("AT+CMGS=\"+919132171718\"\r");  // Replace with mobile number
+  Sim.println("AT+CMGS=\"Number\"\r");  // Replace with mobile number
   delay(1000);                                 // Delay of 1 second
   Sim.println(" **** EMERGENCY ALERT !!!!! **** ");    
-  Sim.println(" LOCATION  :- 18.4642530, 73.8677942  ");
-  Sim.println("https://www.google.com/maps/place/18%C2%B027'51.3%22N+73%C2%B052'04.1%22E/@18.464253,73.8652193,17z/data=!3m1!4b1!4m4!3m3!8m2!3d18.464253!4d73.8677942?entry=ttu");    
+  Sim.println(" LOCATION  :- Lon,lat  ");
+  Sim.println("LOcation on map");    //change as per your use
   Sim.print(" ThingSpeek Monitoring Link :-  ");    // Type in the SMS text you want to send
-  Sim.println("   https://thingspeak.com/channels/2476652 ");   
+  Sim.println("    ");   //thingspeak channel
   Sim.println(" I Require Help ................ ");   
   delay(100);                                  // Delay of 0.1 second
   Sim.println((char)26);                       // ASCII code of CTRL+Z (to exit out)
